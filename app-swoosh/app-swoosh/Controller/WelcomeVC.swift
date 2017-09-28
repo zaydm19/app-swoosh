@@ -9,17 +9,21 @@
 import UIKit
 
 class WelcomeVC: UIViewController {
-    @IBOutlet weak var swoosh: UIImageView!
-    @IBOutlet weak var bgimg: UIImageView!
+    
+    @IBOutlet weak var bigimg: UIImageView!
     
     
+    @IBOutlet weak var forswoosh: UIImageView!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        swoosh.frame = CGRect(x: view.frame.size.width/2 - swoosh.frame.size.width/2, y: 50, width: swoosh.frame.size.width, height: swoosh.frame.size.height)
+        forswoosh.frame = CGRect(x: view.frame.size.width/2 - forswoosh.frame.size.width/2, y: 50, width: forswoosh.frame.size.width, height: forswoosh.frame.size.height)
         
-        bgimg.frame = view.frame
+      
+        bigimg.frame = view.frame
     }
 
     @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
